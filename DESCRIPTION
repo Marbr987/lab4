@@ -8,3 +8,6 @@ Description: This package offers implementation of a linear regression model and
 License: MIT
 RoxygenNote: 7.1.2
 Encoding: UTF-8
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
