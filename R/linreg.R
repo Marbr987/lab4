@@ -1,8 +1,8 @@
 #' linreg
+#' @description A function that performs a linear regression based on QR decomposition
 #' @param formula A formula stating the form of the regression
 #' @param data A dataframe to use for the regression
 #' @return An object of class linreg containing regression coefficients, fitted values, residuals, degree-of-freedom, residual variance, variance of the regression coefficient, t-values and p-values
-#' @descrition A function that performs a linear regression based on QR decomposition
 #' @source http://staff.www.ltu.se/~jove/courses/c0002m/least_squares.pdf
 #' @export
 linreg <-
