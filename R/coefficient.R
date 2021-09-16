@@ -1,3 +1,3 @@
 coef.linreg <- function(object){
-  return(object$coefficients)
+  return(object$regression_coefficient)
 }
