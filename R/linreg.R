@@ -8,7 +8,8 @@
 linreg <-
 function(formula, data){
   X <- model.matrix(formula, data)
-  y <- data[[all.vars(formula)[1]]]
+  y_var_name <- all.vars(formula)[1]
+  y <- data[[y_var_name]]
   QR <- qr(X)
   Q <- qr.X(QR)
   R <- qr.R(QR)
