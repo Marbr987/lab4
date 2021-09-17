@@ -1,3 +1,3 @@
-pred.linreg <- function(x,y){
-  return(x$fitted_values)
+pred.linreg <- function(object){
+  return(object$fitted_values)
 }

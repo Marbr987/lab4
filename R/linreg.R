@@ -17,7 +17,7 @@ function(formula, data){
   coeff <- qr.coef(QR, y)
   residuals <- qr.resid(QR, y)
   y_pred <- X %*% coeff
-  y_pred <- y_pred[,1]
+  y_pred <- as.numeric(y_pred[,1])
   df <- nrow(X) - ncol(X)
   residual_variance <- t(residuals) %*% residuals / df
   residual_variance <- residual_variance[1,1]

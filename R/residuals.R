@@ -1,3 +1,3 @@
-resid.linreg <- function(QR,y){
+resid.linreg <- function(QR){
   return(QR$residuals)
 }
