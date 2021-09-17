@@ -7,6 +7,7 @@
 #' @export
 linreg <-
 function(formula, data){
+  call = match.call()
   X <- model.matrix(formula, data)
   y_var_name <- all.vars(formula)[1]
   y <- data[[y_var_name]]
@@ -23,7 +24,8 @@ function(formula, data){
   var_coeff <- residual_variance * solve(t(R) %*% R)
   t_values <- coeff / sqrt(diag(var_coeff))
   p_values <- pt(t_values, df)
-  res <- list(regression_coefficient = coeff,
+  res <- list(call = call,
+              regression_coefficient = coeff,
               fitted_values = y_pred,
               residuals = residuals,
               degree_of_freedom = df,
