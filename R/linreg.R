@@ -11,11 +11,12 @@ function(formula, data){
   y_var_name <- all.vars(formula)[1]
   y <- data[[y_var_name]]
   QR <- qr(X)
-  Q <- qr.X(QR)
+  Q <- qr.Q(QR)
   R <- qr.R(QR)
   coeff <- qr.coef(QR, y)
   residuals <- qr.resid(QR, y)
   y_pred <- X %*% coeff
+  y_pred <- y_pred[,1]
   df <- nrow(X) - ncol(X)
   residual_variance <- t(residuals) %*% residuals / df
   residual_variance <- residual_variance[1,1]
