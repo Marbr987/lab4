@@ -5,11 +5,9 @@
 #' @return plot showing residuals vs fitted values
 #' @export
 
-plot.linreg=function(x,y)
+plot.linreg=function(x,..)
 {
   library(ggplot2)
-  fitted_values = y_pred
-  residuals = residuals
   Plot1=data.frame(fitted_values,residuals)
   p1 <- ggplot(data_frame1,aes(fitted_values,residuals))+
     geom_point()+geom_abline()+
