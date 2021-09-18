@@ -29,7 +29,7 @@ function(formula, data){
               fitted_values = y_pred,
               residuals = residuals,
               degree_of_freedom = df,
-              residuall_variance = residual_variance,
+              residual_variance = residual_variance,
               variance_of_regression_coefficient = var_coeff,
               t_values = t_values,
               p_values = p_values)

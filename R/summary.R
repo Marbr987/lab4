@@ -16,5 +16,5 @@ summary.linreg <- function(linreg_obj){
   coeff_df[,5] <- sapply(coeff_df[,4], add_stars)
   cat('Coefficients:\n')
   print(coeff_df)
-  cat("---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error:", sqrt(linreg_obj$residuall_variance), 'on', linreg_obj$degree_of_freedom, 'degrees of freedom')
+  cat("---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error:", sqrt(linreg_obj$residual_variance), 'on', linreg_obj$degree_of_freedom, 'degrees of freedom')
 }
