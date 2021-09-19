@@ -2,6 +2,7 @@
 #' @description S3 method for objects of class linreg providing a summary of the object
 #' @param linreg_obj An object of class linreg
 #' @return nothing. Prints a summary of the linreg object.
+#' @name summary.linreg
 #' @export
 summary.linreg <- function(linreg_obj){
   add_stars <- function(x){
