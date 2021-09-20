@@ -40,3 +40,4 @@ vignettes/*.pdf
 
 # R Project files
 *.Rproj
+inst/doc
