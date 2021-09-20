@@ -7,7 +7,9 @@
 \method{plot}{linreg}(x, ...)
 }
 \arguments{
-\item{linreg_obj}{An object of class linreg}
+\item{x}{An object of class linreg}
+
+\item{...}{other arguments}
 }
 \value{
 List containing the two plots.

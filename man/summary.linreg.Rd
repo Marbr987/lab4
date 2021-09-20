@@ -4,10 +4,12 @@
 \alias{summary.linreg}
 \title{summary S3 method}
 \usage{
-\method{summary}{linreg}(linreg_obj)
+\method{summary}{linreg}(object, ...)
 }
 \arguments{
-\item{linreg_obj}{An object of class linreg}
+\item{object}{An object of class linreg}
+
+\item{...}{other arguments}
 }
 \value{
 nothing. Prints a summary of the linreg object.

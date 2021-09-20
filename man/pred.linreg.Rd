@@ -7,7 +7,7 @@
 \method{pred}{linreg}(object)
 }
 \arguments{
-\item{linreg_obj}{An object of class linreg}
+\item{object}{An object of class linreg}
 }
 \value{
 vector containing fitted values

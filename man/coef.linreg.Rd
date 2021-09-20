@@ -4,10 +4,12 @@
 \alias{coef.linreg}
 \title{coef S3 method}
 \usage{
-\method{coef}{linreg}(object)
+\method{coef}{linreg}(object, ...)
 }
 \arguments{
-\item{linreg_obj}{An object of class linreg}
+\item{object}{An object of class linreg}
+
+\item{...}{other arguments}
 }
 \value{
 coefficients of linear regression

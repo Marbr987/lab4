@@ -4,10 +4,12 @@
 \alias{print.linreg}
 \title{print S3 method}
 \usage{
-\method{print}{linreg}(object)
+\method{print}{linreg}(x, ...)
 }
 \arguments{
-\item{linreg_obj}{An object of class linreg}
+\item{x}{An object of class linreg}
+
+\item{...}{other arguments}
 }
 \value{
 nothing. Prints tha call and the coefficients of the linreg object.

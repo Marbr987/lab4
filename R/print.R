@@ -1,11 +1,12 @@
 #' print S3 method
 #' @description S3 method for objects of class linreg printing the call and the coefficients of the linear model
-#' @param linreg_obj An object of class linreg
+#' @param x An object of class linreg
+#' @param ... other arguments
 #' @return nothing. Prints tha call and the coefficients of the linreg object.
 #' @export
-print.linreg <- function(object) {
+print.linreg <- function(x, ...) {
   cat("Call:\n")
-  print(object$call)
+  print(x$call)
   cat("\nCoefficients:\n")
-  print(object$regression_coefficient)
+  print(x$regression_coefficient)
 }
