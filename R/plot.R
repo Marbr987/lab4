@@ -43,7 +43,7 @@ plot.linreg <- function(x, ...){
     # Set axis labels including the function used for the regression in a new line
     ggplot2::labs(x=paste("Fitted values\n linreg(", paste(toString(x$call[2]), ")", sep=""), sep=""), y=expression(sqrt(abs("Standardized Residuals")))) +
     # Add red line through the medians
-    ggplot2::stat_summary(fun=median, colour="red", geom="line") +
+    ggplot2::stat_summary(fun=mean, colour="red", geom="line") +
     # label the 3 largest residuals
     ggplot2::geom_text(data = data[largest_st_res,], mapping = ggplot2::aes(x=fitted_values, y=sqr_abs_st_residuals, label=largest_st_res), size=4, check_overlap = TRUE, nudge_x = -0.24)
   return(list(p1, p2))
